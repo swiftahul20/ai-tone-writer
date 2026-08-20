@@ -1,0 +1,21 @@
+{
+  "name": "ai-tone-writer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w apps/web",
+    "dev:api": "node apps/api/index.js",
+    "dev": "concurrently \"npm:dev:web\" \"npm:dev:api\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
